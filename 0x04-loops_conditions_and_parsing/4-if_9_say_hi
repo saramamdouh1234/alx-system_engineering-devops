@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# printing "Best School" 10 times using while loop
+# On the 9th iteration, displays "Hi" before "Best School"
+
+count=1
+
+while [ $count -lt 11 ]
+do
+  if [ $count -eq 10 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( count++ ))
+done
